@@ -56,19 +56,19 @@ const Services = () => {
                 {/* Service Cards */}
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
                   <ServiceCard 
-                    icon={PackageIcon}
+                    icon={Package}
                     title="Professional Packing"
                     description="Careful wrapping and packing of all items using quality materials to ensure protection during transit."
                   />
                   
                   <ServiceCard 
-                    icon={truck}
+                    icon={Truck}
                     title="Loading & Transportation"
                     description="Expert handling during loading, secure transportation, and careful unloading at destination."
                   />
                   
                   <ServiceCard 
-                    icon={doorOpen}
+                    icon={DoorOpen}
                     title="Door-to-Door Service"
                     description="Complete service from your current doorstep to your new location with attention to detail."
                   />
