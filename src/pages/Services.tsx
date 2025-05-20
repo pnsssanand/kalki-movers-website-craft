@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { package as PackageIcon, truck, doorOpen } from 'lucide-react';
+import { Package, Truck, DoorOpen } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import ServiceCard from '@/components/ServiceCard';
 import { 

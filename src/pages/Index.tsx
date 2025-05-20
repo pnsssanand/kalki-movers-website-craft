@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import ContactForm from '@/components/ContactForm';
 import { getOptimizedImageUrl } from '@/lib/cloudinary';
-import { package as PackageIcon, truck, doorOpen } from 'lucide-react';
+import { Package, Truck, DoorOpen } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -56,7 +56,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="service-card animate-fade-in animate-delay-100">
               <div className="mb-4 p-4 bg-blue-50 rounded-full text-primary-blue">
-                <PackageIcon size={32} />
+                <Package size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Professional Packing</h3>
               <p className="text-neutral-text">
@@ -66,7 +66,7 @@ const Index = () => {
             
             <div className="service-card animate-fade-in animate-delay-200">
               <div className="mb-4 p-4 bg-blue-50 rounded-full text-primary-blue">
-                <truck size={32} />
+                <Truck size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Safe Transportation</h3>
               <p className="text-neutral-text">
@@ -76,7 +76,7 @@ const Index = () => {
             
             <div className="service-card animate-fade-in animate-delay-300">
               <div className="mb-4 p-4 bg-blue-50 rounded-full text-primary-blue">
-                <doorOpen size={32} />
+                <DoorOpen size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-3">Door-to-Door Service</h3>
               <p className="text-neutral-text">
