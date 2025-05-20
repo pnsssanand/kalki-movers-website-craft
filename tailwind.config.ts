@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,11 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+                'primary-blue': '#1E4D8B', // Company primary blue
+                'secondary-orange': '#FF7A00', // Company accent orange
+                'neutral-light': '#F5F7FA', // Light background
+                'neutral-medium': '#E2E8F0', // Medium background
+                'neutral-text': '#334155', // Text color
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,12 +90,25 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' }
+                },
+                'fade-in-left': {
+                    '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                    '100%': { opacity: '1', transform: 'translateX(0)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out forwards',
+                'fade-in-left': 'fade-in-left 0.5s ease-out forwards'
+			},
+            fontFamily: {
+                sans: ['Inter', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
